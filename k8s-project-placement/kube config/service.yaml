@@ -5,10 +5,11 @@ kind: Service
 metadata:
   name: placement-app
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: placement-app
   ports:
-    - protocol: "TCP"
+    - protocol: TCP
       port: 80
       targetPort: 9696
+      nodePort: 32632
