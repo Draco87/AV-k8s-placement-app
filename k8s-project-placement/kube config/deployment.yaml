@@ -16,6 +16,9 @@ spec:
         image: subbu0319/placement-app:v1
         resources:
           limits:
+            memory: "256Mi"  
+            cpu: "1000m"     
+          requests:
             memory: "128Mi"
             cpu: "500m"
         ports:
